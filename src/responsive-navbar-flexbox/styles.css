@@ -47,6 +47,7 @@ main {
     height: 100vh;
     position: fixed;
     background-color: var(--bg-primary);
+    transition: 300ms ease;
 }
 
 .nav-list {
