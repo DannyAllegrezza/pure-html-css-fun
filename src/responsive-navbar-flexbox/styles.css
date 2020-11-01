@@ -6,6 +6,8 @@
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #131318;
+    --scrollbar-track: var(--bg-primary);
+    --scrollbar-thumb: #eabd00;
 }
 
 body {
@@ -13,6 +15,18 @@ body {
     background-color:white;
     margin: 0;
     padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
 }
 
 main {
