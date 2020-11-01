@@ -1,0 +1,25 @@
+:root {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    /* css variables */
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #131318;
+}
+
+body {
+    color:black;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /* rem (root element)
+    The size here will stay relative to the font-size on the root element.
+    Even if we go and change our font-size, everything will stay proportional.
+    */
+    margin-left: 5rem; /* 5rem * 18px = 90px */
+    padding: 1rem; /* 1rem * 18px = 18px :) */
+}
