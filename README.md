@@ -6,6 +6,6 @@ This repository contains demos of what you can accomplish with modern HTML, CSS 
 
 | 🎨 Example                    | Tags                                    	| Live Demo 	|
 |------------------------------	|-----------------------------------------	|-----------	|
-| Responsive Navbar (animated) 	| Flexbox \| Animations \| Responsiveness 	| 🚧         	|
+| Responsive Navbar (animated) 	| `flexbox`, `animations`, `responsiveness` 	| [View on Codesandbox.io](https://codesandbox.io/s/github/DannyAllegrezza/pure-html-css-fun/tree/master/?file=/src/responsive-navbar-flexbox/index.html)         	|
 |                              	|                                         	|           	|
    
