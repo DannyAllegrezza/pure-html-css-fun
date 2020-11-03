@@ -1,8 +1,9 @@
 .progress-bar-container {
   top: 0;
+  left: 0;
   position: fixed;
   height: 1rem;
   display: flex;
-  background-color: red;
+  background-color: grey;
   width: 100%;
 }
