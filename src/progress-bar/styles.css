@@ -1,0 +1,14 @@
+.progress-bar-container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 1rem;
+  display: flex;
+  background-color: rgb(161, 160, 160);
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: var(--yellow);
+  transition: 100ms ease;
+}
