@@ -4,6 +4,10 @@
   <link rel="stylesheet" href="../base.css" />
   <link rel="stylesheet" href="./styles.css" />
   <script src="./progress-bar.js"></script>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -16,23 +20,37 @@
     <p>
       With some simple HTML, CSS and vanilla JavaScript we end up with a pretty cool progress bar.
     </p>
-    <code>
-      .progress-bar-container {
-      top: 0;
-      left: 0;
-      position: fixed;
-      height: 1rem;
-      display: flex;
-      background-color: rgb(161, 160, 160);
-      width: 100%;
-      }
-      
-      .progress-bar {
-      background-color: var(--yellow);
-      transition: 100ms ease;
-      }
-    </code>
-    <p>👇 Scroll down to check it out!</p>
+
+    <pre>
+      <code class="css">.progress-bar-container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 1rem;
+  display: flex;
+  background-color: rgb(161, 160, 160);
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: var(--yellow);
+  transition: 100ms ease;
+}
+          </code>
+    </pre>
+
+    <pre>
+      <code class="js">// progress-bar.js
+document.onscroll = function () {
+  let parent = document.body.parentNode;
+  let progressBar = document.getElementsByClassName("progress-bar")[0];
+
+  let position = Math.floor((parent.scrollTop / (parent.scrollHeight - parent.clientHeight)) * 100);
+
+  progressBar.style.width = `${position}%`;
+};</code>
+    </pre>
+    <span>👇 Scroll down to check it out!</span>
     <h1>The Cornish Rex</h1>
     <p>
       A Cornish Rex is a breed of domestic cat. The Cornish Rex has no hair
